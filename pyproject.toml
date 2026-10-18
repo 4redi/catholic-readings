@@ -1,0 +1,15 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "readings"
+version = "0.1.0"
+requires-python = ">=3.8"
+dependencies = ["requests", "colorama"]
+
+[project.scripts]
+readings = "main:main"
+
+[tool.setuptools]
+py-modules = ["main"]
